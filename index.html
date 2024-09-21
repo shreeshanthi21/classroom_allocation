@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom Allotment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Classroom Allotment System</h1>
+
+        <!-- Teacher Login Form -->
+        <div id="login-section" class="login-section">
+            <h2>Teacher Login</h2>
+            <form id="loginForm">
+                <label for="teacherId">Teacher ID:</label>
+                <input type="text" id="teacherId" name="teacherId" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <!-- Classroom Selection Section (Shown After Login) -->
+        <div id="classroom-section" class="classroom-section" style="display: none;">
+            <h2>Select Classroom</h2>
+            <form id="classroomForm">
+                <label for="classroom">Classroom:</label>
+                <select id="classroom" name="classroom">
+                    <!-- Options will be populated dynamically -->
+                </select>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="timeSlot">Time Slot:</label>
+                <input type="time" id="timeSlot" name="timeSlot" required>
+                <button type="submit">Submit Request</button>
+            </form>
+        </div>
+
+        <!-- HOD Approval/Feedback -->
+        <div id="response-section" class="response-section" style="display: none;">
+            <h2>Response</h2>
+            <p id="responseMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

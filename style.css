@@ -1,0 +1,76 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #e8f0f2; /* Very soft, light teal */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #4a6a73; /* Muted teal */
+  text-align: center;
+  margin-top: 0;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #6b8e8f; /* Soft gray-green */
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.login-section, .classroom-section, .response-section {
+  background-color: #ffffff;
+  border: 1px solid #d0d9d9; /* Soft gray */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #4a6a73; /* Muted teal */
+}
+
+input[type="text"], input[type="password"], input[type="time"], input[type="date"], select {
+  border: 1px solid #c1d0d3; /* Light gray-blue */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: calc(100% - 22px);
+  font-size: 14px;
+}
+
+button {
+  background-color: #4a6a73; /* Muted teal */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3b5b61; /* Slightly darker muted teal */
+}
+
+#responseMessage {
+  font-size: 16px;
+  color: #4a6a73; /* Muted teal */
+  margin-top: 10px;
+}
